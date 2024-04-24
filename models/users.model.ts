@@ -2,7 +2,6 @@
 
 import { DataTypes, InitOptions, ModelAttributes, Model, Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
-import sequelizeConn from '../db/config';
 import * as crypto from 'crypto';
 dotenv.config();
 
