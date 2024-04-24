@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
+    "dev": "nodemon app.ts",
     "start": "ts-node app.ts --transpile-only",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
