@@ -1,0 +1,14 @@
+{
+    "version" : 2,
+    "build" : [{
+        "src" : "./app.ts",
+        "use" : "@now/node"
+    }],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dist" : "app.ts"
+        }
+    ]
+
+}
