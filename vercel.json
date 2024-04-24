@@ -1,14 +1,14 @@
 {
-    "version" : 2,
-    "build" : {
-        "src" : "./app.ts",
-        "use" : "@now/node"
-    },
-    "routes" : [
-        {
-            "src" : "/(.*)",
-            "dist" : "app.ts"
-        }
-    ]
+    "version": 2,
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ],
+    "env": {
+        "POSTGRES_URL": "postgres://default:hQsZxjT6NLi3@ep-wandering-salad-a47my5rg.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+        "SECRET_KEY":  "HEHEHE"
+    }
 
 }
